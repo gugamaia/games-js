@@ -17,7 +17,7 @@ possibleChoises.forEach(possibleChoises => possibleChoises.addEventListener('cli
 }))
 
 function generatePcChoise() {
-    const randomNumber = Math.floor(Math.random() * 5);
+    const randomNumber = Math.floor(Math.random() * possibleChoises.length);
     
     if (randomNumber === 0) {
         pcChoise = 'rock';
